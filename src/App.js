@@ -27,10 +27,10 @@ function App() {
           <div className="border-box">
             <AddEntryForm addNewEntry={addNewEntry} />
           </div>
-          <div className="col-md-6">
-            <div className="border-box">
-              <EntriesChartTracker parentEntries={entries} />ß
-            </div>
+        </div>
+        <div className="col-md-6">
+          <div className="border-box">
+            <EntriesChartTracker parentEntries={entries} />
           </div>
         </div>
       </div>
