@@ -9,7 +9,7 @@ const EntriesChartTracker = (props) => {
       return [entry.date, entry.weight];
     });
     setChartData(tempChartData);
-  },[props.parentEntries]);
+  }, [props.parentEntries]);
 
   return (
     <Chart
@@ -17,6 +17,7 @@ const EntriesChartTracker = (props) => {
       data={[["Date", "Weight"], ...chartData]}
       width="100%"
       height="400px"
+      options={{ legend: { position: "bottom" } }}
       legendToggle
     />
   );
